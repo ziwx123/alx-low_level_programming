@@ -1,25 +1,24 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
- * Description: A program that prints the lowercase alphabet in reverse.
+ *
  * Return: Always 0 (success)
  */
- int main(void)
+int main(void)
 {
-    char n = '0';
-    char t = 'a';
-     while (n <= '9')
-     {
-	     putchar(n);
-	     putchar('\n');
-	     n++;
-     }
-     while (t <= 'f')
-     {
-	     putchar(t);
-	     putchar('\n');
-	     t++;
-     }
+	char n = 48;
 
-	 return (0);
+	while (n <= 102)
+	{
+		putchar(n);
+		putchar('\n');
+		if (n == 57)
+		{
+			n += 39;
+			n++;
+		}
+	}
+
+	return (0);
 }
