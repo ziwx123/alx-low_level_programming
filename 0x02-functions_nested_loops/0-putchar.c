@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ *main-Entry Point
+ *Discreption:a program that prints _putchar using a fonction
+ *Return:Always 0 (sucess)
+*/
 int main(void)
 {
 	_putchar('_');
