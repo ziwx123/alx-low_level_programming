@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  * Description: A program that prints the lowercase alphabet in reverse.
@@ -6,13 +7,13 @@
  */
 int main(void)
 {
-  char i = 'z';
+	char i = 'z';
 
-  for (i = 'z'; i >= 'a'; i--)
-  {
-    putchar(i);
-    putchar('\n');
-  }
+	for (i = 'z'; i >= 'a'; i--)
+	{
+		putchar(i);
+		putchar('\n');
+	}
 
-    return (0);
+	return (0);
 }
