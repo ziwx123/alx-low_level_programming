@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	int d1, d2, d3, d4;
+	int d1, d2, d3, d4, d5, d6;
 
 	for (d1 = 0; d1 <= 9; d1++)
 	{
@@ -12,17 +12,16 @@ int main(void)
 			{
 				for (d4 = d3 + 1; d4 <= 9; d4++)
 				{
-					putchar(d1 + '0');
-					putchar(d2 + '0');
-					putchar(',');
-					putchar(' ');
-					putchar(d3 + '0');
-					putchar(d4 + '0');
-
-					if (d1 != 6)
+					for (d5 = d4 + 1; d5 <= 9; d5++)
 					{
-						putchar(',');
-						putchar(' ');
+						for (d6 = d5 + 1; d6 <= 9; d6++)
+						{
+							putchar(d1 + '0');
+							putchar(d2 + '0');
+							putchar(d3 + '0');
+							putchar(',');
+							putchar(' ');
+						}
 					}
 				}
 			}
