@@ -1,34 +1,33 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 
 /**
- * main - entry point
+ * main - Entry point
  *
- * Description: Print the value of n
+ * Description: Print the last digit of a randomly generated number and its sign.
  *
- * Return: 0 (success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-    int n, digit;
+    int n, lastDigit;
 
     srand(time(0));
     n = rand() - RAND_MAX / 2;
-    /* Your code goes here */
-    digit = n % 10; /* Calculate the last digit */
+    lastDigit = n % 10;
 
-    if (digit > 5)
+    if (lastDigit > 5)
     {
-	    printf("Last digit of %i is %i and is 0", n, digit);
+        printf("Last digit of %d is %d and is greater than 5\n", n, lastDigit);
     }
-    else if (digit == 0)
+    else if (lastDigit == 0)
     {
-	    printf("Last digit of %i is %i and is 0", n, digit);
+        printf("Last digit of %d is %d and is 0\n", n, lastDigit);
     }
     else
     {
-	    printf("Last digit of %i is %i and is less than 6 and not 0\n", n, digit);
+        printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastDigit);
     }
 
     return (0);
