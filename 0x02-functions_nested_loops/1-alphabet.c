@@ -4,13 +4,12 @@
  * Description: Prints the alphabet in lowercase using a function
  * Return: Always 0 (success)
  */
-int mai(void)
+void print_alphabet(void)
 {
 	char i = 'a';
 	for (i = 'a'; i <= 'z'; i++)
 	{
-	  print_alphabet(i);
+	  _putchar(i);
 	}
-	return (0);
 
 }
